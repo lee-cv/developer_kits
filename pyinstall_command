@@ -1,0 +1,8 @@
+pyinstaller \
+--onefile \
+--windowed \
+--name video_frame_extractor_gui \
+--collect-all cv2 \
+--collect-all PIL \
+--hidden-import=PIL._tkinter_finder \
+video_frame_extractor_gui.py
